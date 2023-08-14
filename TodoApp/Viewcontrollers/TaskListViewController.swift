@@ -1,5 +1,5 @@
 //
-//  TasksViewController.swift
+//  TaskListViewController.swift
 //  TodoApp
 //
 //  Created by Vlad on 14.8.23..
@@ -8,7 +8,8 @@
 import UIKit
 
 class TaskListViewController: UITableViewController {
-    //var taskLists: [TaskList] = []
+    var taskLists: [String] = ["a", "b"]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,24 +26,21 @@ class TaskListViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        taskLists.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskListCell", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        let taskList = taskLists[indexPath.row]
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
