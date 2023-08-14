@@ -60,15 +60,47 @@
 		F55BE6912A8A7848001933F7 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
-				F55BE6922A8A7848001933F7 /* AppDelegate.swift */,
-				F55BE6942A8A7848001933F7 /* SceneDelegate.swift */,
-				F55BE6982A8A7848001933F7 /* Main.storyboard */,
-				F55BE6AB2A8A79DD001933F7 /* TasksViewController.swift */,
-				F55BE69B2A8A784B001933F7 /* Assets.xcassets */,
-				F55BE69D2A8A784B001933F7 /* LaunchScreen.storyboard */,
-				F55BE6A02A8A784B001933F7 /* Info.plist */,
+				F55BE6AD2A8A7AE2001933F7 /* App */,
+				F55BE6AE2A8A7AFD001933F7 /* Sttoryboards */,
+				F55BE6B02A8A7B34001933F7 /* Viewcontrollers */,
+				F55BE6AF2A8A7B1F001933F7 /* Resourses */,
 			);
 			path = TodoApp;
+			sourceTree = "<group>";
+		};
+		F55BE6AD2A8A7AE2001933F7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE6922A8A7848001933F7 /* AppDelegate.swift */,
+				F55BE6942A8A7848001933F7 /* SceneDelegate.swift */,
+				F55BE6A02A8A784B001933F7 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F55BE6AE2A8A7AFD001933F7 /* Sttoryboards */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE6982A8A7848001933F7 /* Main.storyboard */,
+				F55BE69D2A8A784B001933F7 /* LaunchScreen.storyboard */,
+			);
+			path = Sttoryboards;
+			sourceTree = "<group>";
+		};
+		F55BE6AF2A8A7B1F001933F7 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE69B2A8A784B001933F7 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		F55BE6B02A8A7B34001933F7 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE6AB2A8A79DD001933F7 /* TasksViewController.swift */,
+			);
+			path = Viewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +332,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKWG4AGNW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TodoApp/Info.plist;
+				INFOPLIST_FILE = TodoApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -331,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKWG4AGNW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TodoApp/Info.plist;
+				INFOPLIST_FILE = TodoApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
