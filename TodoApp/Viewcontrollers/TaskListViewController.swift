@@ -1,5 +1,5 @@
 //
-//  TaskViewController.swift
+//  TasksViewController.swift
 //  TodoApp
 //
 //  Created by Vlad on 14.8.23..
@@ -7,16 +7,19 @@
 
 import UIKit
 
-class TasksViewController: UITableViewController {
-
+class TaskListViewController: UITableViewController {
+    //var taskLists: [TaskList] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        let addButton = UIBarButtonItem(
+            barButtonSystemItem:
+              .add,
+              target: self,
+              action: #selector(addButtonPressed)
+        )
+        navigationItem.rightBarButtonItem = addButton
+        navigationItem.leftBarButtonItem =  editButtonItem
     }
 
     // MARK: - Table view data source
@@ -85,5 +88,8 @@ class TasksViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @objc private func addButtonPressed() {
+       // showAlert()
+    }
 
 }
